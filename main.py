@@ -38,7 +38,7 @@ class App(tk.Tk):
 
         # Ekstrak teks dari gambar sementara
         text = pytesseract.image_to_string(img_path)
-
+        
         # Hapus file sementara setelah ekstraksi teks selesai
         os.remove(img_path)
 
